@@ -1,11 +1,38 @@
 var spielerName;
-
+function begruesung(){
+	var name=WertHolen();
+	document.getElementById("Spielername").innerHTML = name;
+}
 function starteSpiel() {
 
 	spielerName = document.getElementById('eingabe').value;
-  nameHinzufuegen(spielerName);
-	
-    alert('Hallo ' + spielerName + ' und Herzlich Willkommen beim Text Adventure ');
+ // nameHinzufuegen(spielerName);
+ //namensspeicherung cookie ein jahr//
+ WertSetzen("spielerName",spielerName,365*24*60*60*1000);
+ location.href="Startpart1.html";
+}
+   function WertSetzen (Bezeichner, Wert, Verfall) {
+      var jetzt = new Date();
+      var Auszeit = new Date(jetzt.getTime() + Verfall);
+      document.cookie = Bezeichner + "=" + Wert + "; expires=" + Auszeit.toGMTString() + ";";
+   }
+    function WertHolen () {
+ 
+      var Wert = "";
+ 
+      if (document.cookie) {
+        var Wertstart = document.cookie.indexOf("=") + 1;
+        var Wertende = document.cookie.indexOf(";");
+ 
+        if (Wertende == -1)
+          Wertende = document.cookie.length;
+        Wert = document.cookie.substring(Wertstart, Wertende);
+      }
+        return Wert;
+    }
+	  
+   function wirdnichtausgefuehrt(){
+   alert('Hallo ' + spielerName + ' und Herzlich Willkommen beim Text Adventure ');
     var alter =0;
     while(alter <16){
     alter= prompt('Wie alt bist du ?');
@@ -42,7 +69,7 @@ if (user==='Tür suchen')
   { alert  ('Du kommst in einen Raum mit 4 schlafenden Wachen, um sie herum leere Bierfässer.');
   { var user=prompt('Unternimmmöglichkeiten: Abstechen oder leise vorbei schleichen.')
   if (user.toLowerCase()==='Abstechen')
-alert (spielerName + ' ermeuchelt sie alle im Schlaf und nimmt ihre Waffen.');}}}
+alert (spielerName + ' ermeuchelt sie alle im Schlaf und nimmt ihre Waffen.');}}
   {if (user.toLowerCase()==='leise vorbei schleichen')
   alert('Du versuchst dich an ihnen vorbei zu schleichen dabei bist du aber zu ungeschickt eine Wache wacht auf')
   alert('Du musst ihn zum schweigen bringen du tötest ihn')}
