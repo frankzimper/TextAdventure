@@ -5,6 +5,11 @@
 <title>Text Adventure</title>
 <script src="script.js"></script>
 <style>
+body {
+        background-image:
+          url(2015-06-24_00006.jpg);
+		background-size: auto;
+}
 h1 {
 color: red;
 font-weight: 900;
@@ -25,9 +30,14 @@ body {
 
 }
 #part2 { 
-	float: right; 
+    color: red; 
 	width: 30em;
-	margin-right: 7em;	
+	font-family: Algerian,comic sans MS;	
+	float: left; 
+  	left: 9em;
+  	bottom: 3em;
+  	color: #c5c5c5;
+	text-align: left;
 }
 
 #part4  {
@@ -46,34 +56,24 @@ body {
 </style>
 </head>
 <body onload="begruesung()">
-
-<h1>Text Adventure</h1>
-<div id="part1">
 <p>Hallo <span id="Spielername">Spieler </span>!</p>
-
-<label for="eingabe">Gib deinen Nickname ein</label>
-<input type="txt" name="eingabe" id="eingabe"></input>
-<button type="button" onclick="starteSpiel();">Los geht's</button>
+<button type="button" onclick="starteSpiel();">Den Raum erkunden</button>
+</div>
+<button type="button" onclick="starteSpiel();">Weiter schlafen</button>
+</div>
+<button type="button" onclick="starteSpiel();">Die Tür untersuchen</button>
 </div>
 <div id="part2">
-<p>So noch ein paar Infos das war unser erster Kontakt mit Javascript,demnach haben wir viel Zeit und Nerven in diesen Text Adventure gesteckt.</p>
+<p>Du öffnest deine Augen,dir steigt ein fauliger Geruch in die Nase schlag artig wird dir bewusst wo du bist.</p>
 
 <ol>
-<li>Bitte nur simplen Möglichkeiten eingeben da wir nichts anderes  geschrieben haben,dafür hatten wir schlicht weg zu wenig Zeit nichtsdes zu trotz haben wir versucht das beste aus der uns zur verfügung stehenden Zeit zu machen.</li>
-<li>Uns ging es hauptsächlich um das Technische und eher weniger um die Spiele Handlung,wir bitten das zu entschuldigen </li>
-<li>Es ist schwieriger als es aus sieht</li>
+<li> Du bist im Kerker,doch wo sich dieser Kerker befindet oder gar wem er gehört will dir beim besten Willen nicht einfallen.
+Dein Schadel brummt.Dein Körper schreit vor schmerz.</li>
+
 </ol>
 </div>
 
-<div id="part3">
-<h2 class="meinTitel">Das Spiel wurde gespielt von</h2>
-<button type='button' onclick='namenSortieren();'> Liste sortieren</button>
-<div id='namensListe'></div>
-</div>
-
 <div id="part4">
-Developers: Nando Ruck, Noah Gutmann<br> 
-Support: Herr Zimper 
 </div>
 
 </body>
