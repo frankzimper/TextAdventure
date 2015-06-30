@@ -35,7 +35,7 @@ function starteSpiel() {
    alert('Hallo ' + spielerName + ' und Herzlich Willkommen beim Text Adventure ');
     var alter =0;
     while(alter <16){
-    alter= prompt('Wie alt bist du ?');
+    alter= prompt('Wie alt bist du ?');                        
     console.log(alter);
     }
     alert('Du wachst in einem dunklen Raum auf, dir tut alles weh.')
@@ -43,7 +43,7 @@ function starteSpiel() {
  {if (user.toLowerCase()==='Tür suchen');
 alert ('Du findest eine massive Holztür sie ist durch ein Zahlenschloss gesichert.');}
  {if(user.toLowerCase()==='weiter schlafen')
-	 {alert('la le lu nur der Mann im Mond schaut zu ...');
+	 {alert('la li lu nur der Mann im Mond schaut zu ...');
     alert('los weiter oder willst du hier sterben')
 	var user=prompt('Unternehmmöglichkeiten: Tür suchen');
 if (user==='Tür suchen')
