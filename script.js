@@ -1,4 +1,5 @@
 var spielerName;
+var zufallszahl;
 function begruesung(){
 	var name=WertHolen();
 	document.getElementById("Spielername").innerHTML = name;
@@ -10,6 +11,33 @@ function starteSpiel() {
  //namensspeicherung cookie ein jahr//
  WertSetzen("spielerName",spielerName,365*24*60*60*1000);
  location.href="Startpart1.html";
+}
+
+function tuerUntersuchen() {
+	document.getElementById('door').style.display='block';
+	zufallszahl = Math.floor(Math.random() * 100);
+	console.log(zufallszahl);
+}
+	
+function tippPruefen() {
+  var eingabe;
+
+  eingabe = document.getElementById('eingegebeneZahl').value;
+  console.log(eingabe);
+
+  if (isNaN(eingabe)) {
+    alert('Fehler bei Eingabe - Nur Zahlen gültig');
+    return false;
+  }
+
+  if (eingabe == zufallszahl) {
+    alert('Die Eingabe ist richtig!');
+  } else if (eingabe > zufallszahl) {
+    alert('Die gesuchte Zahl ist kleiner');
+  } else if (eingabe < zufallszahl) {
+    alert('Die gesuchte Zahl ist größer');
+  }
+
 }
    function WertSetzen (Bezeichner, Wert, Verfall) {
       var jetzt = new Date();
