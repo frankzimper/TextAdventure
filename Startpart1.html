@@ -9,31 +9,36 @@ body {
         background-image:
           url(2015-06-24_00006.jpg);
 		background-size: auto;
+		font-family: Algerian,comic sans MS;
+		color: #c5c5c5;
 }
 h1 {
 color: red;
 font-weight: 900;
-font-family: Algerian,comic sans MS;
+
 }
 
 h2.meinTitel  {
 color: blue;
 font-family: Ar berkley
 }
-
+#part3 {
+	display:none;
+}
 body {
        
         
 		background-size: auto;
 }
-#part1 {
-
+#inhalt {
+    width: 30em;
+  	left: 9em;
 }
-#part2 { 
-    color: red; 
-	width: 30em;
-	font-family: Algerian,comic sans MS;	
-	float: left; 
+#door {
+	display:	none;
+}
+
+#part2 { 		
   	left: 9em;
   	bottom: 3em;
   	color: #c5c5c5;
@@ -58,24 +63,32 @@ body {
 }
 </style>
 </head>
-<div id="part2">
 <body onload="begruesung()">
+<div id="inhalt">
+<div id="part2">
  <li><p> <span id="Spielername">Spieler </span>!</p> öffnest seine Augen,dir steigt ein fauliger Geruch in die Nase schlag artig wird dir bewusst wo du bist.</p>
 
-<ol>
-<li> Du bist im Kerker,doch wo sich dieser Kerker befindet oder gar wem er gehört will dir beim besten Willen nicht einfallen.
-Dein Schadel brummt.Dein Körper schreit vor schmerz.</li>
+<p>
+ Du bist im Kerker,doch wo sich dieser Kerker befindet oder gar wem er gehört will dir beim besten Willen nicht einfallen.
+Dein Schadel brummt.Dein Körper schreit vor schmerz.
 
-</ol>
+</p>
 </div>
-<button type="button1" onclick="starteSpiel();">Den Raum erkunden</button>
-</div>
+<div id="button">
+<button type="button1" onclick="document.getElementById('part3').style.display='block';">Den Raum erkunden</button>
 <button type="button2" onclick="starteSpiel();">Weiter schlafen</button>
+<button type="button3" onclick="tuerUntersuchen();">Die Tür untersuchen</button>
 </div>
-<button type="button3" onclick="starteSpiel();">Die Tür untersuchen</button>
-<div id="part4">
+<div id="part3">
+Du findest ein stück Papier auf dem geschrieben steht du sollst den  Schlafraum gut untersuchen 
 </div>
-if (user===click button1')
-alert('hallo')
+<div id="door">
+Du untersuchst die Tür und findest ein Zahlenschloss gesucht ist eine zahl von 1-100
+<input type="number" id="eingegebeneZahl" min="1" max="100">
+<button onclick="tippPruefen();" type="button" id="btnZahlPruefen">Prüfen</button>
+
+</div>
+
+</div>
 </body>
 </html>
