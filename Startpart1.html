@@ -25,6 +25,9 @@ font-family: Ar berkley
 #part3 {
 	display:none;
 }
+#schlafen {
+    display:	none;
+}
 body {
        
         
@@ -37,7 +40,6 @@ body {
 #door {
 	display:	none;
 }
-
 #part2 { 		
   	left: 9em;
   	bottom: 3em;
@@ -67,28 +69,28 @@ body {
 <div id="inhalt">
 <div id="part2">
  <li><p> <span id="Spielername">Spieler </span>!</p> öffnest seine Augen,dir steigt ein fauliger Geruch in die Nase schlag artig wird dir bewusst wo du bist.</p>
-
 <p>
  Du bist im Kerker,doch wo sich dieser Kerker befindet oder gar wem er gehört will dir beim besten Willen nicht einfallen.
 Dein Schadel brummt.Dein Körper schreit vor schmerz.
 
 </p>
+<div id="schlafen">
 </div>
 <div id="button">
 <button type="button1" onclick="document.getElementById('part3').style.display='block';">Den Raum erkunden</button>
-<button type="button2" onclick="starteSpiel();">Weiter schlafen</button>
+<button type="button2" onclick="document.getElementById('schlafen').style.display='block';">Weiter schlafen</button>
 <button type="button3" onclick="tuerUntersuchen();">Die Tür untersuchen</button>
 </div>
 <div id="part3">
 Du findest ein stück Papier auf dem geschrieben steht du sollst den  Schlafraum gut untersuchen 
 </div>
+<div id="schlafen">
+Wenn du so weiter pennst wirst du nicht mehr aufwachen
+</div> 
 <div id="door">
 Du untersuchst die Tür und findest ein Zahlenschloss gesucht ist eine zahl von 1-100
 <input type="number" id="eingegebeneZahl" min="1" max="100">
 <button onclick="tippPruefen();" type="button" id="btnZahlPruefen">Prüfen</button>
-
-</div>
-
 </div>
 </body>
 </html>
