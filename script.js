@@ -20,18 +20,20 @@ function tuerUntersuchen() {
 }
 	
 function tippPruefen() {
-  var eingabe;
+	var eingabe,
+		statusText;
 
   eingabe = document.getElementById('eingegebeneZahl').value;
+  statusText = document.getElementById('status');
   console.log(eingabe);
 
   if (isNaN(eingabe)) {
-    alert('Fehler bei Eingabe - Nur Zahlen gültig');
+    status.innerHTML = 'Fehler bei Eingabe - Nur Zahlen gültig';
     return false;
   }
 
   if (eingabe == zufallszahl) {
-    alert('Die Eingabe ist richtig!');
+    status.innerHTML = 'Die Eingabe ist richtig!';
   } else if (eingabe > zufallszahl) {
     alert('Die gesuchte Zahl ist kleiner');
   } else if (eingabe < zufallszahl) {
