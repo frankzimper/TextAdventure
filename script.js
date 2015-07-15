@@ -1,5 +1,7 @@
 var spielerName;
 var zufallszahl;
+var verschlafen=0;
+
 function begruesung(){
 	var name=WertHolen();
 	document.getElementById("Spielername").innerHTML = name;
@@ -19,6 +21,13 @@ function tuerUntersuchen() {
 	console.log(zufallszahl);
 }
 	
+function Weiterschlafen(){
+	verschlafen=verschlafen+1;
+	document.getElementById('Weiterschlafen').style.display='block';
+	if (verschlafen===2){
+		alert('Da hast Verpennt du ermeuchelt');
+		location.href="index.html";}
+	}
 function tippPruefen() {
   var eingabe;
 

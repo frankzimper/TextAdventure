@@ -25,21 +25,17 @@ font-family: Ar berkley
 #part3 {
 	display:none;
 }
-#Weiter schlafen {
+#Weiterschlafen {
     display:none;
-}
-body {
-       
-        
-		background-size: auto;
 }
 #inhalt {
     width: 30em;
   	left: 9em;
+	
 }
 #door {
 	display:	none;
-}
+ }
 #part2 { 		
   	left: 9em;
   	bottom: 3em;
@@ -75,19 +71,20 @@ Dein Schadel brummt.Dein Körper schreit vor schmerz.
 </p>
 <div id="button">
 <button type="button1" onclick="document.getElementById('part3').style.display='block';">Den Raum erkunden</button>
-<button type="button2" onclick="Weiter schlafen".style.display='block';">Weiter schlafen</button>
+<button type="button2" onclick="Weiterschlafen();">Weiter schlafen</button>
 <button type="button3" onclick="tuerUntersuchen();">Die Tür untersuchen</button>
 </div>
 <div id="part3">
 Du findest ein stück Papier auf dem geschrieben steht du sollst den  Schlafraum gut untersuchen 
 </div>
-<div id="Weiter schlafen">
+<div id="Weiterschlafen">
 Wenn du so weiter pennst wirst du nicht mehr aufwachen
 </div> 
 <div id="door">
 Du untersuchst die Tür und findest ein Zahlenschloss gesucht ist eine zahl von 1-100
 <input type="number" id="eingegebeneZahl" min="1" max="100">
-<button onclick="tippPruefen();" type="button" id="btnZahlPruefen">Prüfen</button>
+<button onclick="tippPruefen();" type="button" id="btnZahlPruefen">Prüfen</button><br>
+<div id="status"></div>
 </div>
 </body>
 </html>
