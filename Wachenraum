@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Text Adventure</title>
+<script src="script.js"></script>
+<style>
+body {
+        background-image:
+          url(17380078866_0e5a3141a5_o.png);
+		background-size: auto 100%;
+		font-family: Algerian,comic sans MS;
+		color: #c5c5c5;
+		}
+		</style>
+</head>
+<body>
+<p>
+sdg
+dfg
+sdf
+gs
+dfgsdfg
+sdffgs
+dfgsdfgsdfg
+</p>
+
+<p>
+sdg
+dfg
+sdf
+gs
+dfgsdfg
+sdffgs
+dfgsdfgsdfg
+</p>
+
+<p>
+sdg
+dfg
+sdf
+gs
+dfgsdfg
+sdffgs
+dfgsdfgsdfg
+</p>
+
+</body>
+</html>
+
