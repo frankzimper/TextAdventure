@@ -4,66 +4,11 @@
 <meta charset="UTF-8">
 <title>Text Adventure</title>
 <script src="script.js"></script>
-<style>
-body {
-        background-image:
-          url(2015-06-24_00006.jpg);
-		background-size: auto;
-		font-family: Algerian,comic sans MS;
-		color: #c5c5c5;
-}
-h1 {
-color: red;
-font-weight: 900;
-
-}
-
-h2.meinTitel  {
-color: blue;
-font-family: Ar berkley
-}
-#part3 {
-	display:none;
-}
-#Weiterschlafen {
-    display:none;
-}
-#inhalt {
-    width: 30em;
-  	left: 9em;
-	
-}
-#door {
-	display:	none;
- }
-#part2 { 		
-  	left: 9em;
-  	bottom: 3em;
-  	color: #c5c5c5;
-	text-align: left;
-}
-
-#part4  {
-	position: absolute;
-	font-family:Algerian;
-	float: right; 
-  	right: 7em;
-  	bottom: 1em;
-  	color: #c5c5c5;
-	text-align: right;
-}
-
-#part5   {
-   color:red
-   }
-#eingabe{
-	cursor:help;
-}
-</style>
+<link rel="stylesheet" href="style/design.css">
 </head>
-<body onload="begruesung()">
+<body class="startpart1" onload="begruesung()">
 <div id="inhalt">
-<div id="part2">
+<div id="einleitung">
  <li><p> <span id="Spielername">Spieler </span>!</p> öffnest seine Augen,dir steigt ein fauliger Geruch in die Nase schlag artig wird dir bewusst wo du bist.</p>
 <p>
  Du bist im Kerker,doch wo sich dieser Kerker befindet oder gar wem er gehört will dir beim besten Willen nicht einfallen.

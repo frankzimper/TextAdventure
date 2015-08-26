@@ -1,0 +1,97 @@
+
+/** 
+	Allgemeine Styles
+**/
+
+body {
+	font-family: Algerian,comic sans MS;
+}
+
+h1 {
+	color: red;
+	font-weight: 900;
+}
+
+h2.meinTitel  {
+	color: blue;
+	font-family: Ar berkley
+}
+
+/*------------------------------------------------------
+	Styles für index.html
+------------------------------------------------------*/
+
+body.index {
+        background-image: url(../130340.jpg);
+		background-size: auto;
+}
+
+#part1 {
+}
+
+#part2 { 
+	float: right; 
+	width: 30em;
+	margin-right: 7em;	
+}
+
+#part4  {
+	position: absolute;
+	font-family:Algerian;
+	float: left; 
+  	right: 7em;
+  	bottom: 1em;
+  	color: #c5c5c5;
+	text-align: right;
+}
+
+#eingabe{
+	cursor:help;
+}
+
+/*------------------------------------------------------
+	Styles für Startpart1.html
+------------------------------------------------------*/
+
+body.startpart1 {
+        background-image:
+          url(../2015-06-24_00006.jpg);
+		background-size: auto;
+		color: #c5c5c5;
+}
+
+#part3 {
+	display:none;
+}
+
+#Weiterschlafen {
+    display:none;
+}
+
+#inhalt {
+    width: 30em;
+  	left: 9em;
+}
+
+#einleitung { 		
+  left: 9em;
+  bottom: 3em;
+  color: #c5c5c5;
+  text-align: left;
+}
+
+#door {
+	display:	none;
+ }
+
+
+/*------------------------------------------------------
+	Styles für Wachenraum.html
+------------------------------------------------------*/
+
+body.wachenraum {
+    background-image:
+      url(../17380078866_0e5a3141a5_o.png);
+	background-size: auto 100%;
+	color: #c5c5c5;
+}
