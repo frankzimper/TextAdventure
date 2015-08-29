@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Text Adventure</title>
+<script src="script.js"></script>
+<style>
+body {
+        background-image:
+          url(2015-06-24_00006.jpg);
+		background-size: auto;
+		font-family: Algerian,comic sans MS;
+		color: #c5c5c5;
+}
+#part1{
+float: left; 
+	width: 30em;
+margin-left: 7em;	
+}	
+
+</style>
+</head>
+<body>
+<p>
+</body>
+</html>
+</style>
+</head>
+<div id="part1">
+<main role="main">
+ <li><p></span>!</p> Du rennst aus Angst zurück in deine Zelle und wartest darauf dass ein Prinz dich Rettet... .. ..</p>
+</main>
+<script>
+		function time_out() {
+		location.href="Warten.html";
+		
+	}
+	to = setTimeout("time_out()", 2000);
+
+</script>

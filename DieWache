@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Text Adventure</title>
+<script src="script.js"></script>
+<style>
+body {
+        background-image:
+          url(DieWache.jpg);
+        background-size: auto;
+		font-family: Algerian,comic sans MS;
+		color: #c5c5c5;
+ }
+     #part3 {
+	       display:none;
+ }
+     #Abstechen {
+           display:none;
+ }
+     #inhalt {
+         width: 30em;
+  	     left: 9em;
+	
+ }
+</style>
+</head>
+ <li><p></span>!</p> Auf dem Boden vor euch liegen die beiden Wachen und schlafen ihren Rausch aus    .</p>
+<body>
+<div id="button">
+<button type="button1" onclick="document.getElementById('part3').style.display='block';">Vorbei schleichen</button>
+<button type="button" onclick="Übergang1();">Abstechen</button>
+</div>
+<div id="part3">
+Du schleichst an den schlafenden Wachen vorbei wohlwissend das sie aufwachen werden und dein abgang bemerken werden DIR BLEIBT NICHT MEHR VIEL ZEIT! 
+</div>
+<div id="Abstechen">
+Du hebst eine auf dem Boden liegende Waffe auf und....
+</div> 
+<p>
+</body>
+</html>
+</style>
+</head>

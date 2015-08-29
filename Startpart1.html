@@ -59,6 +59,11 @@ font-family: Ar berkley
 #eingabe{
 	cursor:help;
 }
+#schloss{
+	position: absolute;
+	left:	1050px;
+	top:	400px;
+}
 </style>
 </head>
 <body onload="begruesung()">
@@ -85,6 +90,8 @@ Du untersuchst die Tür und findest ein Zahlenschloss gesucht ist eine zahl von 
 <input type="number" id="eingegebeneZahl" min="1" max="100">
 <button onclick="tippPruefen();" type="button" id="btnZahlPruefen">Prüfen</button><br>
 <div id="status"></div>
+</div>
+<div id ="schloss"><img src="schloss.png"></div>
 </div>
 </body>
 </html>

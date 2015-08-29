@@ -1,4 +1,5 @@
-var spielerName;
+
+	  var spielerName;
 var zufallszahl;
 var verschlafen=0;
 
@@ -6,14 +7,27 @@ function begruesung(){
 	var name=WertHolen();
 	document.getElementById("Spielername").innerHTML = name;
 }
-function starteSpiel() {
-
+function starteSpiel() { 
 	spielerName = document.getElementById('eingabe').value;
  // nameHinzufuegen(spielerName);
  //namensspeicherung cookie ein jahr//
  WertSetzen("spielerName",spielerName,365*24*60*60*1000);
  location.href="Startpart1.html";
 }
+function Waffe(){
+   = document.getElementById('Waffe').value;
+ //  WaffeHinzufuegen(WaffenTyp);
+ //Waffenspeicherung cookie ein Jahr//
+ WertSetzen("WaffenTyp",WaffenTyp,365*24*60*60*1000);
+}
+function Übergang1() {
+ location.href="DerMort.html";	
+}
+function time_out() {
+	to = setTimeout("time_out()", 4000);
+	location.href="index.html";
+}
+
 
 function tuerUntersuchen() {
 	document.getElementById('door').style.display='block';
@@ -38,9 +52,17 @@ function tippPruefen() {
     alert('Fehler bei Eingabe - Nur Zahlen gültig');
     return false;
   }
+  
+
+function time_out(val1, val2) {{
+	document.getElementById('id1')
+.innerHTML = val1;	}
+}
+to = setTimeout(time_out, 2000, 'Er wird nie kommen');
 
   if (eingabe == zufallszahl) {
     alert('Die Eingabe ist richtig!');
+	location.href="Wachenraum.html";
   } else if (eingabe > zufallszahl) {
     alert('Die gesuchte Zahl ist kleiner');
   } else if (eingabe < zufallszahl) {
@@ -67,7 +89,9 @@ function tippPruefen() {
       }
         return Wert;
     }
-	  
+	var to;
+
+
    function wirdnichtausgefuehrt(){
    alert('Hallo ' + spielerName + ' und Herzlich Willkommen beim Text Adventure ');
     var alter =0;

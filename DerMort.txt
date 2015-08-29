@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Text Adventure</title>
+<script src="script.js"></script>
+<style>
+body {
+        background-image:
+          url(Kill1.jpg);
+		background-size: auto;
+		font-family: Algerian,comic sans MS;
+		color: #c5c5c5;
+}
+h1 {
+color: red;
+font-weight: 900;
+
+}
+
+h2.meinTitel  {
+color: blue;
+font-family: Ar berkley
