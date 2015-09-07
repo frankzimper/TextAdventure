@@ -1,0 +1,67 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Text Adventure</title>
+<script src="script.js"></script>
+<style>
+body {
+        background-image:
+          url(Fragen.jpg);
+        background-size: auto;
+		font-family: Algerian,comic sans MS;
+		color: Black;
+		}
+#inhalt {
+    width: 30em;
+  	left: 9em;
+}
+#part1 { 	
+  	left: 9em;
+  	bottom: 3em;
+  	color: Red;
+	text-align: left;
+}
+#verschonen{
+     display: none;
+}
+ #Wo{
+ display: none;
+ }
+ #Was{
+ display:none;
+ }
+ #Wie{
+ display:none;
+ }
+ #Zu{
+ display: none;
+ }
+ #Wass{
+ display: none;
+ }
+</style>
+</head>
+<div id="part1">
+ <button type="button" onclick="document.getElementById('Wo').style.display='block';">Wo bin ich?</button>
+ <button type="button" onclick="document.getElementById('Was').style.display='block';">Was machst du hier?</button>
+</div>
+<div id="Was">
+Ich wollte weg von den anderen,hatte einen streit mit den anderen auserdem musste jemand nach dem rechten sehen?!
+</div>
+<div id="Wo">
+Ihr seit im Kerker der Diebesgilde! Harant der Anführer hat euch vor 5 Tagen mitgebracht warscheinlich von einem Raubzug?!
+Wir befinden uns momentan in einem kleinen Nabenlager der Gilde.
+<button type="button" onclick="document.getElementById('Zu').style.display='block';">Gehörst du zu ihnen?</button>
+<div id="Zu">
+Die Gilde hat mich im Wald erwischt als ich auf der Jagt war und als ich einen von ihnen Tötete; als sie versuchten mich zu überwältigen boten sie mir an sich ihnen anzushließen.Und da ich vorher mein Leben mir Riskanter Wilderei verdiente,habe ich mich ihnen angeschlossen. 
+ <button type="button" onclick="document.getElementById('Wass').style.display='block';">Was ist die Gilde?</button>
+ <div id="Wass">
+ Die Gilde ist eine Gemeinschaft von Dieben,Mördern und Systemwiedersetzer.Sie wurde vor 15 Jahren gegründet als der Jahrl die Steuern erhörte und das Jagen verbot.So hatten viele keine Chance weiter für ihren unterhalt zu verdinen.Ihr Anfürer ist Harant ein ehemaliger Hauptmann der in ungnade gefallen ist da,er einen anderen Hauptmann im streit ermordete.Seit her ist er ein Geächteter.
+ <button type="button" onclick="Übergang3();">Auf ewig zum Schweigen bringen!</button>
+ <button type="button" onclick="Übergang5();">Niederschlagen</button>
+</div>
+</div>
+</div>
+</p>
+</body>
+</html>

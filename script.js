@@ -1,7 +1,8 @@
 
-	  var spielerName;
+var spielerName;
 var zufallszahl;
 var verschlafen=0;
+var WaffenTyp;
 
 function begruesung(){
 	var name=WertHolen();
@@ -15,13 +16,28 @@ function starteSpiel() {
  location.href="Startpart1.html";
 }
 function Waffe(){
-   = document.getElementById('Waffe').value;
+ WaffenTyp = document.getElementById('Waffe').value;
  //  WaffeHinzufuegen(WaffenTyp);
  //Waffenspeicherung cookie ein Jahr//
  WertSetzen("WaffenTyp",WaffenTyp,365*24*60*60*1000);
 }
 function Übergang1() {
  location.href="DerMort.html";	
+}
+function Übergang2() {
+	location.href="fight.html";
+}
+function Übergang3() {
+	location.href="Dead.html";
+}
+function Übergang4() {
+	location.href="Fragen2.html";
+}
+function Übergang5() {
+	location.href="Niederschlagen.html";
+}
+function Übergang6() {
+	location.href="Lauf.html";
 }
 function time_out() {
 	to = setTimeout("time_out()", 4000);

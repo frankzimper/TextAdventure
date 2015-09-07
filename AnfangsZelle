@@ -35,6 +35,6 @@ margin-left: 7em;
 		location.href="Warten.html";
 		
 	}
-	to = setTimeout("time_out()", 2000);
+	to = setTimeout("time_out()", 6000);
 
 </script>

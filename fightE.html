@@ -1,0 +1,62 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Text Adventure</title>
+<script src="script.js"></script>
+<style>
+body {
+        background-image:
+          url(fightE.jpg);
+        background-size: auto;
+		font-family: Algerian,comic sans MS;
+		color: #c5c5c5;
+		}
+#inhalt {
+    width: 30em;
+  	left: 9em;
+}
+#part1 { 	
+    position: absolute;	
+  	left: 9em;
+  	bottom: 3em;
+  	color: #c5c5c5;
+	text-align: left;
+}
+#part2 {
+    position: absolute;
+	left:	550px;
+	top:	140px
+	}
+#part3 {
+  display:none;
+}
+#verschonen{
+     display: none;
+}
+#Ja{
+ display: none;
+ }
+</style>
+</head>
+<body onload="begruesung()">
+<div id="inhalt">
+<div id="part1">
+ <li><p> Du setzt mit dem <span id="Spielername">Spieler </span>!</p> an um den letzten Schlag aus zu führen,doch du helst kurz inne du weißt nicht wer sie ist vielleicht ist ihr das selbe wiederfahren wie dir?.</p>
+ <button type="button" onclick="document.getElementById('verschonen').style.display='block';">verschonen</button>
+</div>
+</div>
+<div id="verschonen">
+Deine Gegenüber erkennt ihre Chance in deiner Zögerung und fängt an zu bitten und verspricht dir wenn du sie gehen lässt verräd sie dir ihr Geheimnis.Sie beginnt vor lauter angst an zu erzählen:
+wenn ich weiter gehen würde,kämest du an einem kleinen tümpel vorbei der als Trinkwasser Quwelle genutzt wird.Dort hätte sie vor kurzem was endeckt als ihr,ein Krug hinein geflogen wart.Hoffnungs voll blickt sie dich an lässt du sie gehen ?
+<button type="button" onclick="Übergang3();">Nein</button>
+<button type="button" onclick="document.getElementById('Ja').style.display='block';">Ja</button>
+<div id="Ja">
+ <button type="button" onclick="Übergang4();">weiter aus Fragen.</button>
+</div>
+</div>
+<div id="part2">
+<button type="button" onclick="Übergang3();">Egal Töten</button>
+</div>
+</p>
+</body>
+</html>
