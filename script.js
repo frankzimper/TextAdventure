@@ -1,9 +1,6 @@
 
 var spielerName;
-<<<<<<< HEAD
-=======
 var WaffenTyp;
->>>>>>> origin/master
 var zufallszahl;
 var verschlafen=0;
 var WaffenTyp;
@@ -20,11 +17,7 @@ function starteSpiel() {
  location.href="Startpart1.html";
 }
 function Waffe(){
-<<<<<<< HEAD
- WaffenTyp = document.getElementById('Waffe').value;
-=======
    WaffenTyp = document.getElementById('Waffe').value;
->>>>>>> origin/master
  //  WaffeHinzufuegen(WaffenTyp);
  //Waffenspeicherung cookie ein Jahr//
  WertSetzen("WaffenTyp",WaffenTyp,365*24*60*60*1000);
